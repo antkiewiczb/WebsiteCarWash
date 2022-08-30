@@ -15,30 +15,44 @@
     <title>Nowa Auto Myjnia</title>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar-example">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light position-sticky top-0">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Nowa Auto Myjnia</a>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <nav id="navbar" class="navbar navbar-expand-lg  position-fixed top-0 w-100 py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-droplet"></i> <span>Nowa Auto Myjnia</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+                <div class="navbar-nav ms-auto">
                     <a class="nav-link active" href="#"></a>
-                    <a class="nav-link" href="#">O nas</a>
+                    <a class="nav-link" href="#aboutus">O nas</a>
                     <a class="nav-link" href="#">Usługi</a>
                     <a class="nav-link" href="#">Cennik</a>
+                    <a class="nav-link" href="#">Projekty</a>
                     <a class="nav-link" href="#">Kontakt</a>
-
                 </div>
             </div>
         </div>
     </nav>
 
+    <header>
+        <div class="header-img">
+            <div class="img-shadow">
+                <div class="header-text">
+                    <h1>Nowa Auto Myjnia</h1>
+                    <p class="blue-text">kosmetyka samochodowa</p>
+
+                </div>
+                <a href="#aboutus"><i class="fas fa-chevron-down"></i></a>
+            </div>
+    </header>
+
+    <div style="height:100vh"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
