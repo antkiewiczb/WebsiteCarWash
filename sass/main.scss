@@ -1,22 +1,37 @@
 @import 'colors';
+
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
+
 body {
 	position: relative;
-	background-color: #444;
 	font-family: 'Montserrat', sans-serif;
+	background-color: #444;
 }
-.blue-text {
-	color: $main-color;
-	font-size: 22px;
+
+h2,
+h3 {
+	text-align: center;
 	text-transform: uppercase;
 }
-.shadow-img {
+
+.underline {
+	margin: 0 auto 40px;
+	width: 60px;
+	height: 4px;
+	background-color: $main-color;
+}
+
+.blue-text {
+	color: $main-color;
+}
+
+.shadow-bg {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -25,19 +40,18 @@ nav {
 	transition: background-color 0.6s;
 	z-index: 1;
 
+	.nav-link,
+	a,
 	i {
-		color: $main-color;
-	}
-	span {
-		color: $text-color;
-		padding: 5px;
-	}
-	.nav-link {
 		color: $text-color;
 	}
 
 	.nav-link:hover {
 		color: $main-color;
+	}
+
+	.fa-bars {
+		padding: 10px;
 	}
 
 	.navbar-brand {
@@ -53,9 +67,14 @@ header {
 	color: $text-color;
 
 	h1 {
-		font-size: 48px;
+		font-size: 30px;
 		text-transform: uppercase;
 	}
+
+	p {
+		font-size: 14px;
+	}
+
 	.header-img {
 		position: relative;
 		height: 100vh;
@@ -66,68 +85,169 @@ header {
 		z-index: 0;
 	}
 
-	.img-shadow {
+	.shadow-img {
 		position: absolute;
 		width: 100%;
 		height: 100%;
 		background-color: rgba(0, 0, 0, 0.8);
 		z-index: -10;
 	}
+
 	.header-text {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+		height: 100%;
 		padding: 10px;
 		text-align: center;
-		height: 100%;
 		z-index: 5;
+
+		h1 {
+			font-size: 48px;
+		}
+		p {
+			text-transform: uppercase;
+		}
+	}
+
+	.btn-outline-light {
+		text-transform: uppercase;
 	}
 
 	.fa-chevron-down {
 		position: absolute;
 		left: 50%;
+		transform: translateX(-50%);
 		bottom: 20px;
 		font-size: 30px;
-		transform: translateX(-50%);
 		color: $text-color;
 	}
 }
 
-@media (min-width: 375px) {
+.about-us {
+	img {
+		width: 200px;
+	}
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+	p {
+		font-size: 20px;
+		text-align: center;
+	}
+}
+.services {
+	h2 {
+		color: white;
+	}
+
+	.service-box {
+		position: relative;
+		height: 300px;
+		background-size: cover;
+		z-index: 0;
+
+		p {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			font-size: 2rem;
+			text-transform: uppercase;
+			color: $text-color;
+		}
+		.box-shadow {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.6);
+			z-index: -1;
+		}
+	}
+	.box-one {
+		background-image: url('../img/services/IMG_0801.JPG');
+	}
+	.box-two {
+		background-image: url('../img/services/13029691_701471803336956_4576328209504541316_o.jpg');
+	}
+	.box-three {
+		background-image: url('../img/services/waxed-2553925_1920.jpg');
+	}
+	.box-four {
+		background-image: url('../img/services/vehicle-7138638_640.jpg');
+	}
+	.box-five {
+		background-image: url('../img/services/vehicle-3872550_640.jpg');
+	}
+	.box-six {
+		background-image: url('../img/services/winter-tires-2861853_640.jpg');
+	}
+}
+
+@media (min-width: 320px) {
 	.navbar-brand {
 		font-size: 16px;
 	}
 	.fa-bars {
-		padding: 5px;
-		color: $text-color;
+		font-size: 16px;
 	}
-
 	header {
-		h1 {
-			font-size: 24px;
-		}
-		.blue-text {
-			font-size: 18px;
+		.header-text {
+			h1 {
+				font-size: 26px;
+			}
 		}
 	}
 }
+
+@media (min-width: 375px) {
+	header {
+		.header-text {
+			h1 {
+				font-size: 28px;
+			}
+
+			p {
+				font-size: 16px;
+			}
+		}
+	}
+	.navbar-brand {
+		font-size: 20px;
+	}
+	.fa-bars {
+		font-size: 18px;
+	}
+}
+
 @media (min-width: 768px) {
+	header {
+		.header-text {
+			h1 {
+				font-size: 48px;
+			}
+
+			p {
+				font-size: 24px;
+			}
+		}
+	}
 	.navbar-brand {
 		font-size: 24px;
 	}
 	.fa-bars {
 		font-size: 24px;
-		padding: 5px;
-		color: $text-color;
 	}
+}
 
+@media (min-width: 1200px) {
 	header {
-		h1 {
-			font-size: 42px;
-		}
-		.blue-text {
-			font-size: 24px;
+		.header-img {
+			background-image: url('../img/car-header.jpg');
 		}
 	}
 }

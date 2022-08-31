@@ -2,23 +2,34 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 body {
   position: relative;
-  background-color: #444;
   font-family: "Montserrat", sans-serif;
+  background-color: #444;
+}
+
+h2,
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #039dff;
 }
 
 .blue-text {
   color: #039dff;
-  font-size: 22px;
-  text-transform: uppercase;
 }
 
-.shadow-img {
+.shadow-bg {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -27,18 +38,16 @@ nav {
   transition: background-color 0.6s;
   z-index: 1;
 }
+nav .nav-link,
+nav a,
 nav i {
-  color: #039dff;
-}
-nav span {
-  color: rgba(255, 255, 255, 0.911);
-  padding: 5px;
-}
-nav .nav-link {
   color: rgba(255, 255, 255, 0.911);
 }
 nav .nav-link:hover {
   color: #039dff;
+}
+nav .fa-bars {
+  padding: 10px;
 }
 nav .navbar-brand {
   font-weight: bold;
@@ -51,8 +60,11 @@ header {
   color: rgba(255, 255, 255, 0.911);
 }
 header h1 {
-  font-size: 48px;
+  font-size: 30px;
   text-transform: uppercase;
+}
+header p {
+  font-size: 14px;
 }
 header .header-img {
   position: relative;
@@ -63,7 +75,7 @@ header .header-img {
   background-attachment: fixed;
   z-index: 0;
 }
-header .img-shadow {
+header .shadow-img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -75,48 +87,128 @@ header .header-text {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%;
   padding: 10px;
   text-align: center;
-  height: 100%;
   z-index: 5;
+}
+header .header-text h1 {
+  font-size: 48px;
+}
+header .header-text p {
+  text-transform: uppercase;
+}
+header .btn-outline-light {
+  text-transform: uppercase;
 }
 header .fa-chevron-down {
   position: absolute;
   left: 50%;
+  transform: translateX(-50%);
   bottom: 20px;
   font-size: 30px;
-  transform: translateX(-50%);
   color: rgba(255, 255, 255, 0.911);
 }
 
-@media (min-width: 375px) {
+.about-us img {
+  width: 200px;
+}
+.about-us i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.about-us p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.services h2 {
+  color: white;
+}
+.services .service-box {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  z-index: 0;
+}
+.services .service-box p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.911);
+}
+.services .service-box .box-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.services .box-one {
+  background-image: url("../img/services/IMG_0801.JPG");
+}
+.services .box-two {
+  background-image: url("../img/services/13029691_701471803336956_4576328209504541316_o.jpg");
+}
+.services .box-three {
+  background-image: url("../img/services/waxed-2553925_1920.jpg");
+}
+.services .box-four {
+  background-image: url("../img/services/vehicle-7138638_640.jpg");
+}
+.services .box-five {
+  background-image: url("../img/services/vehicle-3872550_640.jpg");
+}
+.services .box-six {
+  background-image: url("../img/services/winter-tires-2861853_640.jpg");
+}
+
+@media (min-width: 320px) {
   .navbar-brand {
     font-size: 16px;
   }
   .fa-bars {
-    padding: 5px;
-    color: rgba(255, 255, 255, 0.911);
+    font-size: 16px;
   }
-  header h1 {
-    font-size: 24px;
+  header .header-text h1 {
+    font-size: 26px;
   }
-  header .blue-text {
+}
+@media (min-width: 375px) {
+  header .header-text h1 {
+    font-size: 28px;
+  }
+  header .header-text p {
+    font-size: 16px;
+  }
+  .navbar-brand {
+    font-size: 20px;
+  }
+  .fa-bars {
     font-size: 18px;
   }
 }
 @media (min-width: 768px) {
+  header .header-text h1 {
+    font-size: 48px;
+  }
+  header .header-text p {
+    font-size: 24px;
+  }
   .navbar-brand {
     font-size: 24px;
   }
   .fa-bars {
     font-size: 24px;
-    padding: 5px;
-    color: rgba(255, 255, 255, 0.911);
   }
-  header h1 {
-    font-size: 42px;
-  }
-  header .blue-text {
-    font-size: 24px;
+}
+@media (min-width: 1200px) {
+  header .header-img {
+    background-image: url("../img/car-header.jpg");
   }
 }/*# sourceMappingURL=main.css.map */

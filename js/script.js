@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	function addShadow() {
 		if (window.scrollY >= 300) {
-			nav.classList.add('shadow-img');
+			nav.classList.add('shadow-bg');
 		} else {
-			nav.classList.remove('shadow-img');
+			nav.classList.remove('shadow-bg');
 		}
 	}
 

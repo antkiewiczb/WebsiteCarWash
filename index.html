@@ -10,49 +10,132 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/c1f8d99aec.js" crossorigin="anonymous"></script>
     <title>Nowa Auto Myjnia</title>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
-    <nav id="navbar" class="navbar navbar-expand-lg  position-fixed top-0 w-100 py-3">
+
+    <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
         <div class="container">
-            <a class="navbar-brand" href="#"><i class="fa-solid fa-droplet"></i> <span>Nowa Auto Myjnia</span></a>
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-droplet blue-text"></i> Nowa Auto Myjnia</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" href="#"></a>
-                    <a class="nav-link" href="#aboutus">O nas</a>
-                    <a class="nav-link" href="#">Usługi</a>
-                    <a class="nav-link" href="#">Cennik</a>
-                    <a class="nav-link" href="#">Projekty</a>
-                    <a class="nav-link" href="#">Kontakt</a>
+
+                    <a class="nav-link" href="#about-us">o nas</a>
+                    <a class="nav-link" href="#services">usługi</a>
+                    <a class="nav-link" href="#prices">cennik</a>
+                    <a class="nav-link" href="#team">galeria</a>
+                    <a class="nav-link" href="#contact">kontakt</a>
                 </div>
             </div>
         </div>
     </nav>
-
     <header>
         <div class="header-img">
-            <div class="img-shadow">
-                <div class="header-text">
-                    <h1>Nowa Auto Myjnia</h1>
-                    <p class="blue-text">kosmetyka samochodowa</p>
+            <div class="shadow-img"></div>
+            <div class="header-text">
+                <h1>Nowa Auto Myjnia</h1>
+                <p class="blue-text">profesjonalna myjnia ręczna</p>
+
+            </div>
+            <a href="#about-us"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </header>
+    <main>
+        <section id="about-us" class="about-us bg-light py-5">
+            <div class="container">
+                <h2>o nas</h2>
+                <div class="underline"></div>
+                <p>Jesteśmy profesjonalną myjnią ręczną znajdującą się na mapie Olsztyna od 2016 roku. Przez lata
+                    prowadzenia działalności daliśmy się poznać jako solidna firma. Zdobyliśmy szerokie grono
+                    zadowolonych klientów. Świadczymy usługi takie jak mycie ręczne, pranie foteli, usługi detailingowe
+                    oraz serwis klimatyzacji i opon.</p>
+                <h3 class="py-3">Korzystamy tylko z najlepszych środków</h3>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 text-center" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="./img/logo/adbl-logo.png" alt="Logo firmy adbl">
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-center" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="./img/logo/elite-logo.png" alt="Logo firmy elite detailer">
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-center" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="./img/logo/soft-logo.png" alt="Logo firmy soft99">
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-center" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="./img/logo/sg-logo.png" alt="Logo firmy shiny-garage">
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-center" data-aos="zoom-in" data-aos-delay="500">
+                        <img src="./img/logo/rrc-logo.png" alt="Logo firmy rrc custome">
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-center" data-aos="zoom-in" data-aos-delay="600">
+                        <img src="./img/logo/tenzi.png" alt="Logo firmy tenzi detailer">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services bg-dark  py-5">
+            <h2>Usługi</h2>
+            <div class="underline"></div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="service-box box-one" data-aos="fade-right" data-aos-delay="100">
+                            <p class="h-100 p-3">Mycie zewnętrzne</p>
+                            <div class="box-shadow"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-delay="200">
+                        <div class="service-box box-two">
+                            <p class="h-100 p-3">Sprzątanie wnętrza</p>
+                            <div class="box-shadow"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-delay="300">
+                        <div class="service-box box-three">
+                            <p class="h-100 p-3">Woskowanie</p>
+                            <div class="box-shadow"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-delay="400">
+                        <div class="service-box box-four">
+                            <p class="h-100 p-3">Detailing</p>
+                            <div class="box-shadow"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-delay="500">
+                        <div class="service-box box-five">
+                            <p class="h-100 p-3">Ozonowanie</p>
+                            <div class="box-shadow"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-delay="600">
+                        <div class="service-box box-six">
+                            <p class="h-100 p-3">Wymiana Opon</p>
+                            <div class="box-shadow"></div>
+                        </div>
+                    </div>
 
                 </div>
-                <a href="#aboutus"><i class="fas fa-chevron-down"></i></a>
             </div>
-    </header>
+        </section>
+    </main>
 
-    <div style="height:100vh"></div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="./js/script.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/aos.js"></script>
 </body>
 
 </html>
