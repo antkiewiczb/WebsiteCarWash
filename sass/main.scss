@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'animation';
 
 *,
 *::before,
@@ -11,7 +12,6 @@
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
-	background-color: #444;
 }
 
 h2,
@@ -210,6 +210,26 @@ header {
 		transform: scale(1.05);
 	}
 }
+.gallery {
+	h2 {
+		color: $text-color;
+	}
+	.img-fluid {
+		border-radius: 5px;
+		width: 600px;
+		height: 400px;
+	}
+}
+.info {
+	h2 {
+		font-size: 20px;
+	}
+	i {
+		color: $main-color;
+		padding-right: 5px;
+		font-size: 15px;
+	}
+}
 
 @media (min-width: 320px) {
 	.navbar-brand {
@@ -223,6 +243,12 @@ header {
 			h1 {
 				font-size: 26px;
 			}
+		}
+	}
+	.contact {
+		iframe {
+			width: 300px;
+			height: 200px;
 		}
 	}
 }
@@ -264,6 +290,12 @@ header {
 	}
 	.fa-bars {
 		font-size: 24px;
+	}
+	.contact {
+		iframe {
+			width: 600px;
+			height: 450px;
+		}
 	}
 }
 
