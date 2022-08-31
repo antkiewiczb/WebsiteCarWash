@@ -188,6 +188,29 @@ header {
 	}
 }
 
+.price {
+	.price-box {
+		margin: 20px 10px;
+		padding: 30px;
+		background-color: white;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+		transition: transform 0.3s;
+		h3 {
+			color: $main-color;
+		}
+	}
+	.price-info {
+		a {
+			text-decoration: none;
+			color: $main-color;
+		}
+	}
+
+	.price-box:hover {
+		transform: scale(1.05);
+	}
+}
+
 @media (min-width: 320px) {
 	.navbar-brand {
 		font-size: 16px;

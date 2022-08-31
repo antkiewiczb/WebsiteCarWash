@@ -168,6 +168,24 @@ header .fa-chevron-down {
   background-image: url("../img/services/winter-tires-2861853_640.jpg");
 }
 
+.price .price-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+.price .price-box h3 {
+  color: #039dff;
+}
+.price .price-info a {
+  text-decoration: none;
+  color: #039dff;
+}
+.price .price-box:hover {
+  transform: scale(1.05);
+}
+
 @media (min-width: 320px) {
   .navbar-brand {
     font-size: 16px;
